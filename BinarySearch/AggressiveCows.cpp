@@ -1,6 +1,7 @@
 #include<iostream>
 
 using namespace std ;
+bool isItPossibleToPlaceCows(int *stalls, int ns, int nc, int mid) ;
 
 int main()
 {
@@ -32,4 +33,27 @@ int main()
 
     cout << ans << endl ;
     return 0 ;
+}
+
+bool isItPossibleToPlaceCows(int *stalls, int ns, int nc, int mid)
+{
+    int noCowsPlaced = 1 ;
+    int pos = stalls[0] ;
+
+    for(int i =  1; i <= ns-1 ; i++)
+    {
+        if(stalls[i] - pos >= mid)
+        {
+            noCowsPlaced++ ;
+            pos = stalls[i] ;
+            
+            if(noCowsPlaced == nc)
+                return true ;
+        }
+
+
+
+    }
+
+    return false ;
 }
