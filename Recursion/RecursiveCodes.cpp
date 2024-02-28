@@ -15,12 +15,12 @@ int main()
     // toss(3, "") ;
     // subsequences("abc", "") ;
     // validParenthesis(3,0,0,"") ;
-    // climbingStairs(0,5,"") ;
+    climbingStairs(0,5,"") ;
     // permutations("abb", "") ;
 
     // lexicoCounting(0,1000) ;
 
-    TOH(4, "S", "D", "H") ;
+    // TOH(4, "S", "D", "H") ;
 
     return 0 ;
 }
