@@ -47,8 +47,8 @@ class Graph
                 return 100000;
         }
 
-        if(dp[src][visited] != -1)
-            return dp[src][visited] ;
+        if(dp[curr][visited] != -1)
+            return dp[curr][visited] ;
 
         int ans = INT_MAX ;
         map<int, int>::iterator itr ;
@@ -64,7 +64,7 @@ class Graph
             }
         }
 
-        dp[src][visited] = ans ;
+        dp[curr][visited] = ans ;
         return ans ;
     }
 
